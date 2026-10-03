@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /README.md
+Disallow: /manifest.sha256
+Sitemap: https://harbournova.org/sitemap.xml

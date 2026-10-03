@@ -3,18 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <title>HarbourNova</title>
+  <meta name="theme-color" content="#082d4c">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/site.css">
+  <title>HarbourNova — A new direction for the xBase family of languages</title>
+  <meta name="description" content="HarbourNova is a programming language and compiler project in the xBase family of languages, built on Harbour’s foundations. Free public distribution is planned.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://harbournova.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HarbourNova">
+  <meta property="og:title" content="HarbourNova — A new direction for the xBase family of languages">
+  <meta property="og:description" content="A programming language and compiler project in the xBase family of languages, built on Harbour’s foundations. Free distribution is planned; discussion is open.">
+  <meta property="og:url" content="https://harbournova.org/">
+  <meta property="og:image" content="https://harbournova.org/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="HarbourNova sailboat logo. A new direction for the xBase family of languages. Community discussion is open; compiler and framework are in development.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HarbourNova — A new direction for the xBase family of languages">
+  <meta name="twitter:description" content="A new direction for the xBase family of languages, built on Harbour’s foundations. Free compiler distribution is planned; community discussion is open.">
+  <meta name="twitter:image" content="https://harbournova.org/assets/social-preview.png">
 </head>
-<body>
-  <main class="page-shell" aria-labelledby="site-title">
-    <section class="card">
-      <div class="mark" aria-hidden="true">HN</div>
-      <h1 id="site-title">HarbourNova</h1>
-      <p class="status">Website under construction</p>
+<body data-release-stage="pre-release">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="HarbourNova home">
+        <img src="assets/images/HarbourNovaLogoHN.svg" width="38" height="30" alt="">
+        <span>Harbour<span class="brand-nova">Nova</span><sup>™</sup></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#development">Development</a>
+        <a href="index.html#questions">Questions</a>
+        <a class="nav-community" href="https://groups.google.com/g/harbournova-users">Join the community <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-rule" aria-hidden="true"></span> THE HARBOURNOVA PROJECT</p>
+          <h1 id="hero-title">A new direction
+            <span class="hero-family">for the <span class="accent-word">xBase family of languages.</span></span></h1>
+          <p class="hero-lead">Built on Harbour’s foundations.<br>Designed to move forward.</p>
+          <p class="hero-description">HarbourNova is a programming language and compiler project building on Harbour’s foundations within the xBase family of languages. The compiler is being developed for free public distribution.</p>
+          <div class="actions">
+            <a class="button button-primary" href="https://groups.google.com/g/harbournova-users">Join the community <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://groups.google.com/g/harbour-users/c/l5xDg-FEUDo">Read the introduction <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="release-note"><span class="status-dot" aria-hidden="true"></span>In development. No public compiler download yet.</p>
+        </div>
+        <figure class="hero-art">
+          <div class="logo-field">
+            <img class="hero-logo" src="assets/images/HarbourNovaLogoBoatTitleHN.svg" width="1007" height="1029" fetchpriority="high" alt="HarbourNova sailboat logo with the HarbourNova name and HN emblem">
+          </div>
+          <figcaption><span>FAMILIAR FOUNDATIONS</span><span class="caption-line" aria-hidden="true"></span><span>NEW POSSIBILITIES</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="status-band" aria-label="Project at a glance">
+      <div class="container status-grid">
+        <div><span class="status-label">JOIN NOW</span><p>Community discussion</p></div>
+        <div><span class="status-label">IN DEVELOPMENT</span><p>Compiler &amp; web framework</p></div>
+        <div><span class="status-label">PLANNED</span><p>Free compiler distribution</p></div>
+      </div>
+    </div>
+
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading two-column">
+          <div><p class="eyebrow">01 / THE IDEA</p><h2 id="about-title">Keep the spirit.<br>Move the language forward.</h2></div>
+          <div class="intro-prose"><p>HarbourNova is an independent project led by Eric Lendvai. It builds on Harbour’s foundations while making room for deliberate changes to the language, runtime, and developer experience.</p><p>The aim is evolution, not compatibility at any cost: retain the productive approach of the xBase family of languages, and rethink inherited constraints.</p></div>
+        </div>
+        <div class="principles">
+          <article><span class="item-number" aria-hidden="true">01</span><h3>Familiar foundations</h3><p>A practical, readable approach to programming, with its roots in Harbour and the wider xBase family of languages.</p></article>
+          <article><span class="item-number" aria-hidden="true">02</span><h3>Deliberate evolution</h3><p>A distinct language direction rather than a promise to run every existing Harbour program unchanged.</p></article>
+          <article><span class="item-number" aria-hidden="true">03</span><h3>Developer-focused</h3><p>A compiler, tooling, and application-development story being shaped together—not just a new name.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="development" class="section development-section" aria-labelledby="development-title">
+      <div class="container">
+        <div class="section-heading heading-row"><div><p class="eyebrow">02 / IN DEVELOPMENT</p><h2 id="development-title">What we’re building.</h2></div><p class="section-note">The compiler and framework are still in development. No public software release is available yet.</p></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="card-top"><span class="card-category">LANGUAGE &amp; TOOLING</span><span class="state-tag">In development</span></div>
+            <h3>HarbourNova compiler</h3><p>The compiler, runtime, and development tools for the HarbourNova programming language: the foundation for writing and building HN applications.</p>
+            <div class="card-bottom"><span>Repository currently private</span><a href="#questions" aria-label="Read questions about the HarbourNova core release">Release questions <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="card-top"><span class="card-category">APPLICATION DEVELOPMENT</span><span class="state-tag">In development</span></div>
+            <h3>HN Web Framework</h3><p>A companion framework being developed for building web applications with HarbourNova. More detail will be shared as the project progresses.</p>
+            <div class="card-bottom"><span>Repository currently private</span><a href="https://groups.google.com/g/harbournova-users" aria-label="Follow HN Web Framework discussion in the community group">Follow the discussion <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+        <div class="development-note"><p><strong>Planned compiler distribution:</strong> A public HN distribution repository with versioned downloads, documentation, and license information. These release resources are not available yet.</p><p>The core and HN Web Framework development repositories remain private. Release availability will be announced here and in the community group.</p></div>
+      </div>
+    </section>
+
+    <section id="community" class="section community-section" aria-labelledby="community-title">
+      <div class="container community-layout">
+        <div><p class="eyebrow">03 / THE COMMUNITY</p><h2 id="community-title">Bring your questions.<br>Help shape what’s next.</h2><p class="community-lead">You do not need to wait for the compiler to be released to take part in the conversation.</p><a class="button button-light" href="https://groups.google.com/g/harbournova-users">Visit the HarbourNova users group <span aria-hidden="true">↗</span></a><p class="join-note">Hosted on Google Groups. Open the group and follow its membership prompts; Google may ask you to sign in.</p></div>
+        <div class="conversation-topics"><h3>A place to discuss</h3><div><span aria-hidden="true">01</span><p>Language ideas and practical development needs.</p></div><div><span aria-hidden="true">02</span><p>Experiences with Harbour, other languages in the xBase family, and application development.</p></div><div><span aria-hidden="true">03</span><p>Project announcements, questions, and constructive feedback.</p></div><p class="community-footnote">Joining the group is for discussion and announcements. It does not grant access to the private repositories or an unreleased compiler.</p></div>
+      </div>
+    </section>
+
+    <section class="section conversations-section" aria-labelledby="conversations-title">
+      <div class="container">
+        <div class="section-heading heading-row"><div><p class="eyebrow">START HERE</p><h2 id="conversations-title">The conversation so far.</h2></div><p class="section-note">The original introduction and community invitation, shared with Harbour users.</p></div>
+        <div class="reading-grid">
+          <a class="reading-card" href="https://groups.google.com/g/harbour-users/c/l5xDg-FEUDo"><span class="card-category">PROJECT INTRODUCTION</span><h3>Introducing HarbourNova — a new direction built on Harbour’s foundations</h3><span class="reading-footer">Read on Google Groups <span aria-hidden="true">↗</span></span></a>
+          <a class="reading-card" href="https://groups.google.com/g/harbour-users/c/x07DD1650ro"><span class="card-category">COMMUNITY INVITATION</span><h3>Join the HarbourNova conversation</h3><p>The invitation to the dedicated HarbourNova users group.</p><span class="reading-footer">Read on Google Groups <span aria-hidden="true">↗</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions" class="section faq-section" aria-labelledby="questions-title">
+      <div class="container faq-layout">
+        <div><p class="eyebrow">04 / GOOD QUESTIONS</p><h2 id="questions-title">Before you<br>get started.</h2><p class="faq-intro">A few things to know at this stage of the project.</p></div>
+        <div class="faq-list">
+          <details open><summary>Can I download HarbourNova now?</summary><div class="faq-answer"><p>Not yet. The compiler and HN Web Framework are still in development. There is no public compiler or framework release to download. You can join the community for discussion and announcements now.</p></div></details>
+          <details><summary>Will the HarbourNova compiler be free?</summary><div class="faq-answer"><p>Yes. The HarbourNova compiler is being developed for distribution free of charge. License terms and applicable notices will accompany the actual release. A public download is not available yet.</p></div></details>
+          <details><summary>Are the source repositories public?</summary><div class="faq-answer"><p>The core and HN Web Framework development repositories are currently private. A public HN distribution repository is planned when the compiler is ready for an initial release. Joining the Google Group does not grant access to private repositories.</p></div></details>
+          <details id="xbase-meaning"><summary>What does “xBase” mean?</summary><div class="faq-answer"><p>Here, xBase refers to a family of related programming languages, including Harbour, Clipper, and FoxPro. It describes the language family, not a separate HarbourNova product or a promise of compatibility with every language in that family.</p></div></details>
+          <details><summary>Is this a drop-in replacement for Harbour?</summary><div class="faq-answer"><p>No. HarbourNova builds on Harbour’s foundations but follows its own language and runtime direction. Existing Harbour code should not be assumed to compile or behave unchanged.</p></div></details>
+          <details><summary>How do I join or ask a question?</summary><div class="faq-answer"><p>Open the <a href="https://groups.google.com/g/harbournova-users">HarbourNova users group</a> and follow the membership prompts shown by Google Groups. Use the group for project questions, ideas, and feedback.</p></div></details>
+          <details><summary>When will the first public release be available?</summary><div class="faq-answer"><p>No public release date has been announced. When a release is ready, this website and the community group will point to the distribution repository, versioned downloads, documentation, and license information.</p></div></details>
+        </div>
+      </div>
+    </section>
+    <section class="closing-section" aria-label="Join the community">
+      <div class="container closing-inner"><div><p class="eyebrow">THE NEXT CHAPTER STARTS WITH A CONVERSATION.</p><h2>Meet HarbourNova.</h2></div><a class="button button-primary" href="https://groups.google.com/g/harbournova-users">Join the community <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand" href="./" aria-label="HarbourNova home">
+        <img src="assets/images/HarbourNovaLogoHN.svg" width="38" height="30" alt="">
+        <span>Harbour<span class="brand-nova">Nova</span><sup>™</sup></span>
+      </a>
+      <p>A new direction built on Harbour’s foundations.</p>
+      <a class="text-link" href="https://groups.google.com/g/harbournova-users">Community group <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Eric Lendvai. HarbourNova™ is a trademark of Eric Lendvai.</p>
+      <a href="privacy.html">About this site &amp; privacy</a>
+    </div>
+  </footer>
 </body>
 </html>
