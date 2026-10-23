@@ -21,10 +21,11 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ('index.html', 'privacy.html', '404.html')
-GROUP_LINKS = {
+EXTERNAL_LINKS = {
     'https://groups.google.com/g/harbournova-users',
     'https://groups.google.com/g/harbour-users/c/l5xDg-FEUDo',
     'https://groups.google.com/g/harbour-users/c/x07DD1650ro',
+    'https://github.com/harbournova/harbournova',
 }
 ORIGINAL_LOGO_BLOBS = {
     'assets/images/HarbourNovaLogoBoatTitleHN.svg': 'a9b4e39dc33b3e9417587bf10242bc1e2eddec00',
@@ -147,8 +148,8 @@ def check(verify_manifest: bool) -> list[str]:
             rel = candidate.relative_to(ROOT).as_posix()
             if url.fragment and rel in docs and unquote(url.fragment) not in docs[rel].ids:
                 errors.append(f'{name}: missing fragment in {link}')
-    if external != GROUP_LINKS:
-        errors.append(f'External anchor targets differ from approved group links: {external ^ GROUP_LINKS}')
+    if external != EXTERNAL_LINKS:
+        errors.append(f'External anchor targets differ from approved community and public repository links: {external ^ EXTERNAL_LINKS}')
 
     for name, expected in ORIGINAL_LOGO_BLOBS.items():
         p = ROOT/name

@@ -51,6 +51,7 @@ nav .nav-community { display: inline-flex; align-items: center; gap: 14px; borde
 .button-primary { background: var(--navy); color: white; border: 1px solid var(--navy); }
 .button-primary:hover { background: #0f4a6e; }
 .text-link { display: inline-flex; align-items: center; gap: 14px; font-size: .84rem; font-weight: 650; }
+.repository-link { margin-top: 18px; }
 .release-note { display: flex; gap: 9px; align-items: baseline; color: var(--body); font-size: .74rem; margin-top: 21px; }
 .status-dot { flex: 0 0 7px; height: 7px; border-radius: 50%; background: var(--teal); }
 .hero-art { position: relative; min-width: 0; padding: 2px 8px 0 19px; }
@@ -59,6 +60,8 @@ nav .nav-community { display: inline-flex; align-items: center; gap: 14px; borde
 .hero-art figcaption { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 460px; margin: 20px auto 0; font-size: .56rem; font-weight: 700; letter-spacing: .15em; color: #55717d; }
 .caption-line { flex: 1; height: 1px; background: #adcdd3; }
 .status-band { background: var(--navy); color: #fff; }
+.status-band a:hover { color: #fff; }
+.status-band a:focus-visible { outline-color: #b7fbff; }
 .status-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; padding-block: 27px; }
 .status-grid > div { padding-left: 32px; border-left: 1px solid #35556d; }
 .status-grid > div:first-child { padding-left: 0; border-left: 0; }
