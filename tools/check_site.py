@@ -26,6 +26,13 @@ EXTERNAL_LINKS = {
     'https://groups.google.com/g/harbour-users/c/l5xDg-FEUDo',
     'https://groups.google.com/g/harbour-users/c/x07DD1650ro',
     'https://github.com/harbournova/harbournova',
+    'https://github.com/harbournova/harbournova/tree/main/design',
+    'https://github.com/harbournova/harbournova/blob/main/design/HarbourNova_Build_Toolset_Developer_Overview.md',
+    'https://github.com/harbournova/harbournova/blob/main/design/HarbourNova_HN1_Number_Data_Type.md',
+    'https://github.com/harbournova/harbournova/blob/main/design/HarbourNova_HN1_Temporal_Data_Types_Developer_Overview.md',
+    'https://github.com/harbournova/harbournova/blob/main/design/HarbourNova_Local_SQL_Developer_Overview.md',
+    'https://github.com/harbournova/harbournova/blob/main/design/HarbourNova_Multiple_Returns_Developer_Overview.md',
+    'https://github.com/harbournova/harbournova/blob/main/design/HarbourNova_Tensors_HN1_Developer_Article.md',
 }
 ORIGINAL_LOGO_BLOBS = {
     'assets/images/HarbourNovaLogoBoatTitleHN.svg': 'a9b4e39dc33b3e9417587bf10242bc1e2eddec00',

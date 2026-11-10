@@ -1,6 +1,6 @@
 # HarbourNova project website
 
-Website update: **October 23, 2026**.
+Website update: **November 10, 2026**.
 
 A responsive, pre-release project website for **https://harbournova.org/**,
 hosted through the `harbournova/website` GitHub repository. The site is static
@@ -14,16 +14,18 @@ HN Web Framework release is available yet.
 
 ## Changes in this update
 
-- Community and introduction links open in a new browser tab, including the
-  homepage buttons and corresponding links elsewhere on the site.
-- `JOIN NOW` in the homepage status strip is a keyboard-accessible link to the
-  same HarbourNova users group, with a visible focus outline on the dark background.
-- A `Design documents & future downloads` link appears below the homepage actions.
-- The Development section, repository FAQ, and site-information page distinguish
-  the existing public design documents from future software downloads.
-- The site checker permits the public HarbourNova repository alongside the
-  existing Google Groups destinations.
-- The delivery manifest records the updated file hashes.
+- The homepage lists all six documents in the public `design/` directory, with
+  a direct GitHub link and a short topic description for each.
+- The list covers the build toolset and editor integration, Number, temporal
+  data types, Local SQL, multiple return values, and Tensors.
+- The build toolset entry includes hnmake, VS Code/VSCodium build controls,
+  the project tree, and the graphical Project Editor with HN Web Foundation.
+- The main navigation on all three pages and the homepage introduction link
+  to the design-document section. The Development section also links directly
+  to the public design directory.
+- The list uses the site's existing responsive reading-card layout.
+- The site checker includes the design directory and all six document URLs;
+  the delivery manifest records the updated file hashes.
 
 The existing artwork, domain configuration, page structure, and pre-release
 status are retained. The core and HN Web Framework development repositories
@@ -35,35 +37,27 @@ This update was prepared from the website repository's `main` branch:
 
 ```text
 Repository: https://github.com/harbournova/website
-Commit: 11a727e7d82d70302b58e0571dcc4a51969e68bf
+Commit: d25252ac811f8a6e68b78144b873fddefc27a557
 ```
 
 The fetched files were checked against their Git blob hashes before editing.
 
-## Apply the ZIP
+## Maintaining the design-document list
 
-`HarbourNova-website-update-2026-10-23.zip` is an incremental update for an
-existing checkout. Its seven entries are relative to the repository root;
-there is no enclosing folder:
+The source list is the public
+[HarbourNova design directory](https://github.com/harbournova/harbournova/tree/main/design).
+When a document is added, renamed, or removed:
 
-- `index.html`
-- `privacy.html`
-- `404.html`
-- `assets/site.css`
-- `tools/check_site.py`
-- `README.md`
-- `manifest.sha256`
+1. Update the reading cards in the `design` section of `index.html`. Use the
+   document's exact public GitHub path and describe its topic without adding
+   implementation-status claims.
+2. Update `EXTERNAL_LINKS` in `tools/check_site.py` to match the linked documents.
+3. Refresh the SHA-256 hashes in `manifest.sha256` for changed files, then run
+   the checks below before committing.
 
-Retain any local edits you need, then extract the ZIP directly into the website
-repository root, allowing these files to be replaced. Use the extraction option
-that preserves the `assets/` and `tools/` paths. No file deletions are required.
-
-The ZIP contains no replacement logos, icons, hosting configuration, repository
-metadata, or editor settings. Existing site assets must already be present.
-It is not a standalone copy of the complete website.
-
-After extracting, review the changes and publish using the repository's normal
-commit and push process. This ZIP does not itself publish the website.
+Each document link opens in a new tab with `rel="noopener noreferrer"`.
+The list reuses the existing responsive layout and requires no JavaScript or
+additional assets.
 
 ## Check and preview
 
@@ -102,7 +96,8 @@ DNS, HTTPS, or the live GitHub Pages deployment.
 
 ## Site files and publishing
 
-- `index.html`: project overview, development status, community, and seven FAQs.
+- `index.html`: project overview, development status, design-document list,
+  community, and seven FAQs.
 - `privacy.html`: site information and privacy explanation.
 - `404.html`: missing-page response with root-absolute links.
 - `assets/site.css`: responsive styling and keyboard focus.
